@@ -1,0 +1,178 @@
+/* GLOBAL */
+
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.active {
+    color: #0065FC; 
+}
+
+.inactive {
+    color: #DEEBFF;
+}
+
+.section {
+    background-color: #F2F2F2;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #0065FC;
+}
+li {
+    list-style-type: none;
+}
+
+
+/* HEADER */
+
+
+.headerMenu {
+    margin: 8px 25px;
+}
+.headerMenu ul {
+    padding: 0;
+    margin: 0;   
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+.headerMenu li a {
+    padding: 20px;
+    transition: .2s all ease;
+}
+
+.headerMenu li a:hover {  
+    color: #0065FC; 
+    border-top: 3px solid #0065FC;
+    background-color: #DEEBFF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 5px 5px 5px 2px #F2F2F2;
+    transition: .2s all ease;   
+}
+
+#logo {    
+    flex: 1;
+}
+
+#logo a {
+    padding: 0;
+}
+       
+#login {
+    font-weight: bold;
+}
+
+#logo a:hover {
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+
+.container {
+    padding: 0 25px;
+}
+
+
+/* SEARCH SECTION */
+#searchSection h1 {
+    margin-bottom: 0;
+}
+
+#searchSection p {
+    margin-top: 0;
+}
+
+#siteSearch {
+    padding: 9px;
+    border: 1px solid #F2F2F2;
+    margin-bottom : 10px;
+}
+.btnSearch {
+    background-color: #0065FC; 
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    color: #FFF;
+    font-weight: bold;
+    margin-left: -5px;
+}
+
+/* ACCOMODATION */
+
+.sectionOne{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    height: 350px;
+}
+
+#accomodationsContainer{
+    width: 75%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 25px ;  
+}
+
+#mostPopular{
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 25px ;
+}
+
+
+.card {
+    height:140px;
+    width: 160px;
+    background-color: #FFF;
+    border: 5px solid #FFF;
+    border-radius: 10px;
+}
+
+
+
+/* ACTIVITIES */
+
+#activities {
+    height: 300px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;    
+}
+
+.footerMenu {
+    padding: 30px 25px;
+    justify-content: space-between;
+    width: 100%;
+    height: 130px;   
+    background-color: #F2F2F2;
+    display: flex;  
+}
+
+.footerMenu li {
+    padding: 5px;
+}
+
+.footerMenuTitle {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
