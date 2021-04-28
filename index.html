@@ -7,10 +7,10 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
-        <link href="/fonts/css/fontawesome.css" rel="stylesheet">
-        <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
-        <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
-        <link href="/your-path-to-fontawesome/css/fontawesome.min.css" rel="stylesheet">
+        <link href="fonts/fontawesome-free-5.15.3-web/css/fontawesome.css" rel="stylesheet">
+        <link href="fonts/fontawesome-free-5.15.3-web/css/brands.css" rel="stylesheet">
+        <link href="fonts/fontawesome-free-5.15.3-web/css/solid.css" rel="stylesheet">
+        <link href="fonts/fontawesome-free-5.15.3-web/css/fontawesome.min.css" rel="stylesheet">
     <title>Reservia</title>
     </head>
     <body>
@@ -27,51 +27,278 @@
         </header>
         
         <div class="container">
+
             <!-- Search Section-->
             <section id="searchSection">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
 
-                <label for="siteSearch"> </label>
-                <input type="search" id="siteSearch" name="q"
-                    aria-label="Search through site content">
-                
-                <button class="btnSearch">Rechercher</button>
+               
+                <form class="form">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="search" id="siteSearch"
+                        placeholder="Marseille, France">
+                    
+                    <button type="submit" class="btnSearch">Rechercher</button>
+                </form>
+
 
             </section>
+
+            <section class="filters">
+               <span>Filtres</span>
+                <ul>
+                    <li><button class="filterBtn"> <i class="fas fa-money-bill-wave"> </i>  <span>Économique</span></button></li>
+                    <li><button class="filterBtn"> <i class="fas fa-child"> </i> <span>Familial</span></button></li>
+                    <li><button class="filterBtn"> <i class="fas fa-heart"> </i> <span>Romantique</span></button></li>
+                    <li><button class="filterBtn"> <i class="fas fa-dog"> </i> <span>Animaux autorisés</span></button></li>
+                </ul>
+            </section>
+            
+            <div class="info">
+                <i class="fas fa-info"></i>  <p>Plus de 500 logements sont disponibles dans cette ville</p> 
+            </div>
+            
 
             <!-- Section 2 Accomodations -->
             <div class="sectionOne">
                 <section id="accomodationsContainer">
-                    <div id="accomodations">
+                    <div>
+
                         <h2>Hébergements à Marseille</h2>
-                        <div>
-                            <div class="card"><a href="">
-                                <img src="" alt="">
-                                    <span class="accomdationTile">Auberge la Cannebière</span>
+
+                        <div id="accomodations">
+
+                            <div class="card">
+                                <a href="">
+                                    <div class="cardImg">
+                                        <img src="images/logements/reservia logement marseille auberge de la cannebiere.jpg" alt="">
+                                    </div>
+                                
+                                    <span class="cardTitle">Auberge la Cannebière</span>
                                     <p>Nuit à partir de <span class="accomodationPrice">25</span>€</p>
-                                    <i class=""></i>
-                            </a></div>
+                                    <div class="iconStar">
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="card">
+                                <a href="">
+                                    <div class="cardImg">
+                                        <img src="images/logements/reservia logement marseille hotel du port.jpg" alt="">
+                                    </div>
+                                
+                                    <span class="cardTitle">Hôtel du port</span>
+                                    <p>Nuit à partir de <span class="accomodationPrice">52</span>€</p>
+                                    <div class="iconStar">
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="card">
+                                <a href="">
+                                    <div class="cardImg">
+                                        <img src="images/logements/reservia logement marseille hôtel les mouettes.jpg" alt="">
+                                    </div>
+                                
+                                    <span class="cardTitle">Hôtel Les mouettes</span>
+                                    <p>Nuit à partir de <span class="accomodationPrice">76</span>€</p>
+                                    <div class="iconStar">
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="card">
+                                <a href="">
+                                    <div class="cardImg">
+                                        <img src="images/logements/reservia logement marseille auberge de la cannebiere.jpg" alt="">
+                                    </div>
+                                
+                                    <span class="cardTitle">Auberge la Cannebière</span>
+                                    <p>Nuit à partir de <span class="accomodationPrice">25</span>€</p>
+                                    <div class="iconStar">
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="card">
+                                <a href="">
+                                    <div class="cardImg">
+                                        <img src="images/logements/reservia logement marseille hotel du port.jpg" alt="">
+                                    </div>
+                                
+                                    <span class="cardTitle">Hôtel du port</span>
+                                    <p>Nuit à partir de <span class="accomodationPrice">52</span>€</p>
+                                    <div class="iconStar">
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="card">
+                                <a href="">
+                                    <div class="cardImg">
+                                        <img src="images/logements/reservia logement marseille hôtel les mouettes.jpg" alt="">
+                                    </div>
+                                
+                                    <span class="cardTitle">Hôtel Les mouettes</span>
+                                    <p>Nuit à partir de <span class="accomodationPrice">76</span>€</p>
+                                    <div class="iconStar">
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </a>
+                            </div>
+                         
                         </div>
-    
+
+                        <div class="more">
+                            <p>Afficher plus</p>
+                        </div>
+
+                        
+                    
                     </div>
                 </section>
     
                 <!-- Section 3 most popular -->
                 <section id="mostPopular">
                     <h2>Les plus populaires</h2>
+
+                    <div class="popular">
+
+                        <div class="card">
+                            <a href="" class="cardContent">
+                                <div class="cardImg">
+                                    <img src="images/logements/small/reservia logement marseille hotel le soleil du matin.jpg" alt="">
+                                </div>
+                                
+                                <div class="cardText">
+                                    <div>
+                                        <span class="cardTitle">Hôtel Le soleil du matin</span>
+                                        <p>Nuit à partir de <span class="accomodationPrice">128</span>€</p>
+                                    </div>
+                                    
+                                    <div class="iconStar">
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                    </div>
+                                </div>
+
+                                
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="" class="cardContent">
+                                <div class="cardImg">
+                                    <img src="images/logements/small/reservia logement marseille au coeur de leau chambre dhotes.jpg" alt="">
+                                </div>
+                                
+                                <div class="cardText">
+                                    <div>
+                                        <span class="cardTitle">Au coeur de l'eau <br> Chambre d'hôtes </span>
+                                        <p>Nuit à partir de <span class="accomodationPrice">71</span>€</p>
+                                    </div>
+                                    
+                                    <div class="iconStar">
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+
+                                
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="" class="cardContent">
+                                <div class="cardImg">
+                                    <img src="images/logements/small/reservia logement marseille hotel tout bleu tout blanc.jpg" alt="">
+                                </div>
+                                
+                                <div class="cardText">
+                                    <div>
+                                        <span class="cardTitle">Hôtel Tout bleu tout blanc</span>
+                                        <p>Nuit à partir de <span class="accomodationPrice">68</span>€</p>
+                                    </div>
+                                    
+                                    <div class="iconStar">
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star note"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+
+                                
+                            </a>
+                        </div>
+                    </div>
                 </section>
-
-
-
+            
             </div>
  
 
             <!-- Section 4 Activities -->
             <section id="activities">
                 <h2>Activités à Marseille</h2>
-
             </section>
+
+            <div class="activitiesContainer">
+                <div class="activity">
+                        <div class="card">
+                            <a href="">
+                                <div class="cardImg">
+                                    <img src="images/logements/reservia logement marseille auberge de la cannebiere.jpg" alt="">
+                                </div>
+                                
+                                <div class="cardText">
+                                    <span class="cardTitle">Auberge la Cannebière</span>
+                                </div>
+                                
+                            </a>
+                        </div>
+                </div>
+  
+                
+            </div>
+
+
 
         </div>
      
