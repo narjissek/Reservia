@@ -1,4 +1,7 @@
 /* GLOBAL */
+* {
+    box-sizing: border-box;
+}
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -23,11 +26,6 @@ button {
 }
 
 
-
-
-* {
-    box-sizing: border-box;
-}
 
 body {
     height: 100%;
@@ -357,18 +355,47 @@ li {
 .activitiesContainer {
     padding-top: 30px;
     padding-bottom: 50px;
+    display: flex;
+    
+    
 }
+
+.activity {
+    width: 25%;
+}
+
 .activity .card {
     border: none;
+    margin: 0 20px;
+    
 }
+
 
 .activity .cardText{
     padding: 22px;
 }
 
+.activity .cardImg img {
+    height: 400px;
+}
+
+.activityContent {
+    display: flex;
+    flex-direction: column;   
+}
+.activityContent .cardImg img {
+    height: 140px;
+}
+
+.activityContent .card2 img { height: 180px;}
+.activityContent .card3 img { height: 110px;}
+.activityContent .card5 img { height: 140px;}
+.activityContent .card6 img { height: 150px;}
 
 
-
+.activityContent .card {
+    margin-bottom: 40px;
+}
 
 
 /* FOOTER */
